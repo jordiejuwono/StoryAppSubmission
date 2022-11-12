@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Dicoding Intermediate Submission 1</string>
+    <string name="text_register">Register</string>
+    <string name="text_already_have_account">Already have an account?</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_logout">Logout</string>
+    <string name="title_post_story">Post Story</string>
+    <string name="error_password">Password must be 6 length minimum</string>
+    <string name="hint_nama">Nama</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_from_gallery">From Gallery</string>
+    <string name="text_from_camera">From Camera</string>
+    <string name="text_description">Description</string>
+    <string name="text_post_story">Post Story</string>
+    <string name="text_dont_have_account">Don\'t have an account yet?</string>
+    <string name="description_story_image">Story Image</string>
+    <string name="description_decorative">decorative</string>
+    <string name="text_dicoding">Dicoding</string>
+    <string name="text_story_app">Story App</string>
+    <string name="description_splash_screen">Splash Screen</string>
+    <string name="description_add_story">Add Story</string>
+    <string name="text_no_camera_access">Tidak mendapatkan permission untuk mengakses Camera</string>
+    <string name="text_story_success">Add Story Success!</string>
+    <string name="text_choose_picture">Choose a Picture</string>
+    <string name="title_map">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_retry">Retry</string>
+</resources>

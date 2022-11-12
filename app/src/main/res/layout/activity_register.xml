@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.register.RegisterActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:alpha="0"
+        android:layout_height="120dp"
+        android:id="@+id/iv_dicoding_logo"
+        android:src="@drawable/dicoding_logo_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:alpha="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/description_decorative" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:alpha="0"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_dicoding_logo"
+        android:text="@string/text_register"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        tools:alpha="1"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="30dp"
+        tools:alpha="1"
+        android:maxLines="1"
+        android:padding="14dp"
+        android:alpha="0"
+        android:hint="@string/hint_nama"
+        app:layout_constraintTop_toBottomOf="@id/tv_register" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:maxLines="1"
+        tools:alpha="1"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginHorizontal="35dp"
+        android:padding="14dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_email"
+        app:layout_constraintTop_toBottomOf="@id/et_nama" />
+
+    <com.example.dicodingintermediatesubmission1.customview.PasswordEditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:alpha="0"
+        android:padding="14dp"
+        tools:alpha="1"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_password"
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="36dp"
+        tools:alpha="1"
+        android:alpha="0"
+        android:text="@string/text_register"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        tools:alpha="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_register">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_already_have_account"
+            android:textSize="16sp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_login"
+            android:textStyle="bold"
+            android:id="@+id/tv_login"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:indeterminateTint="@color/blue_dicoding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/pb_loading_register"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

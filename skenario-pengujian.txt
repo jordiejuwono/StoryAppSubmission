@@ -1,0 +1,59 @@
+Dicoding Submission Akhir
+Unit Testing:
+
+Repository:
+1. RemoteRepositoryImplTest
+   a. Ketika berhasil memuat data
+	- Memastikan data yang di return adalah RegisterResponse success message saat user Register
+	- Memastikan data yang di return adalah LoginResponse berupa token dari user dan message success saat user Login
+	- Memastikan data yang di return tidak null pada Register dan Login
+	- Memastikan data yang di return adalah SendStoryResponse message success saat Upload Story
+	- Memastikan data yang didapat tidak null saat memanggil StoriesList
+	- Memastikan jumlah data sesuai dengan yang diharapkan saat fetch StoriesList
+
+View Models:
+1. RegisterViewModelTest
+   a. Ketika berhasil memuat data
+	- Memastikan actualResult mengembalikan data Resource.Success
+	- Memastikan data tidak return null
+	- Memastikan data diambil dari UseCase yang berhubungan
+   b. Ketika gagal memuat data
+	- Memastikan data mengembalikan data Resource.Error
+	- Memastikan data diambil dari UseCase yang berhubungan
+
+2. LoginViewModelTest
+   a. Ketika berhasil memuat data
+	- Memastikan actualResult mengembalikan data Resource.Success
+	- Memastikan data tidak return null
+	- Memastikan data diambil dari function UseCase yang berhubungan
+   b. Ketika gagal memuat data
+	- Memastikan data mengembalikan data Resource.Error
+	- Memastikan data masih mengambil dengan UseCase yang terkait
+
+3. HomePageViewModelTest
+   a. Ketika berhasil memuat data
+	- Memastikan data tidak null dan memiliki data beserta jumlah yang sama saat menggunakan Paging 3
+	- Memastikan data yang di return sama dengan data yang sesungguhnya dari Paging 3
+	- Memastikan data yang di return Resource.Success
+	- Memastikan data tidak return null
+   b. Ketika gagal memuat data
+	- Memastikan data mengembalikan data Resource.Error
+
+4. AddStoryViewModelTest
+   a. Ketika berhasil memuat data
+	- Memastikan actualResult mengembalikan message bahwa upload success
+	- Memastikan data tidak return null
+	- Memastikan function yang digunakan dari ViewModel adalah dari UseCase yang berhubungan
+   b. Ketika gagal memuat data
+	- Memastikan data mengembalikan data Resource.Error
+	- Memastikan function tetap menggunakan UseCase yang terkait
+
+5. MapViewModelTest
+   a. Ketika berhasil memuat data
+	- Memastikan actualResult mengembalikan data Resource.Success
+	- Memastikan data tidak return null
+	- Memastikan data diambil dengan UseCase yang berhubungan
+   b. Ketika gagal memuat data
+	- Memastikan data mengembalikan data Resource.Error
+	- Memastikan data masih diambil menggunakan UseCase yang terkait
+
